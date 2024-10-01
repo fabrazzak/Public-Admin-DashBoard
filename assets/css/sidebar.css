@@ -75,6 +75,7 @@
   background-color: var(--bs-primary);
   padding: 1.5rem;
   width: fit-content;
+  transition: 300ms ease-in;
 }
 
 #sidebar:hover .nav-link {
