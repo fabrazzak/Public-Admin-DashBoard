@@ -9,12 +9,14 @@
 
 /* Calendar Header and Day Styles */
 
-.calendar-header, .calendar-row {
+.calendar-header,
+.calendar-row {
   display: flex;
   width: 100%;
 }
 
-.calendar-day-header, .calendar-day {
+.calendar-day-header,
+.calendar-day {
   flex: 1;
   text-align: center;
   padding: 1px;
@@ -62,10 +64,20 @@
 .table {
   width: 100%;
   text-align: center;
+  border: 1px solid #e5e1e190;
+
+
 }
 
-.table th, .table td {
+.table th,
+.table td {
   vertical-align: middle;
+  background: rgb(206, 212, 240);
+
+}
+
+.table tbody td {
+  background: white;
 }
 
 /* Button Link Styling */
@@ -96,7 +108,8 @@
   color: var(--medium-alert);
 }
 
-#next-month, #prev-month {
+#next-month,
+#prev-month {
   color: var(--primary-color);
 }
 
@@ -151,7 +164,7 @@
   flex: 1;
   padding: 0;
   margin-left: 70px;
-  width: calc(100vw - 70px);
+  width: calc(100% - 70px);
 }
 
 .main-section {
@@ -323,12 +336,14 @@ h3 {
   border: none;
 }
 
-.show.general-button, .general-button:focus:active {
+.show.general-button,
+.general-button:focus:active {
   color: var(--white);
   background-color: var(--primary-color);
 }
 
-.general-button:hover:not(.show, :focus:active), tbody tr:hover:not(.active, :focus:active) {
+.general-button:hover:not(.show, :focus:active),
+tbody tr:hover:not(.active, :focus:active) {
   background-color: var(--hover);
 }
 
@@ -391,7 +406,7 @@ h3 {
 thead {
   position: sticky;
   top: 0;
-  z-index: 1;
+
   background-color: var(--white) !important;
 }
 
@@ -451,7 +466,8 @@ tbody tr.active {
   background-color: var(--hover);
 }
 
-.dt-end, .dt-start {
+.dt-end,
+.dt-start {
   justify-content: space-around;
 }
 
@@ -514,7 +530,8 @@ tbody tr.active {
   background-color: var(--background-color);
 }
 
-.user-input:active, .user-input:focus {
+.user-input:active,
+.user-input:focus {
   border: 1px solid var(--primary-color);
   outline: none;
 }
@@ -540,4 +557,3 @@ tbody tr.active {
   justify-content: space-between;
   align-items: center;
 }
-

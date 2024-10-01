@@ -96,6 +96,7 @@
 
 #sidebar:hover ~ #overlay {
   display: block;
+  background-color: #f6f7fb7e;
 }
 
 /* Hover buttons */
