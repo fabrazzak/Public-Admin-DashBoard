@@ -383,3 +383,17 @@ select:disabled {
   background-color: var(--bs-primary);
 }
 
+
+/* conPlanilla css  */
+
+#btnVistaProductos{
+  box-sizing: border-box; 
+  border: 1px solid rgb(5, 33, 111);
+  border-radius: 12px;
+  background: rgb(206, 212, 240);
+
+}
+#btnVistaProductos:hover{
+    background: #041c5e;
+    color: white;
+  }
