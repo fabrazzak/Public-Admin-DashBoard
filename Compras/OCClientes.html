@@ -112,49 +112,57 @@
     </div>
     <div id="page-wraper">
         <div id="top-menu" class="buttons">
-            <h3 id="page-title">Compras: OC clientes pendientes</h3><a class="btn" role="button" id="btnComprar" href="Compras/OCProveedores.html">Comprar</a>
+            <h3 id="page-title">Compras: OC clientes pendientes</h3><a class="btn fw-semibold" role="button" id="btnComprar" href="Compras/OCProveedores.html">Comprar</a>
         </div>
         <div id="content" class="content-column">
-            <div id="divDetalleOCCliente" class="tarjeta row-direction">
-                <div>
-                    <h4>Info R2024-871</h4>
-                    <div class="info-detail">
-                        <h6>Req:</h6>
-                        <p id="infoNombreReq" class="align-right">R2024-584: GALONERA CON TAPA BOMBA y BOLSAS</p>
+
+            <div class="tarjeta">
+                <h4>Info R2024-871</h4>
+                <div id="divDetalleOCCliente" class="  d-flex justify-content-between ">
+
+                    <div class="d-flex flex-column gap-2 ">
+                
+                        <div class="info-detail ">
+                            <h6 class="fw-semibold">Req:</h6>
+                            <p id="infoNombreReq" class="align-right">R2024-584: GALONERA CON TAPA BOMBA y BOLSAS</p>
+                        </div>
+                        <div class="info-detail">
+                            <h6 class="fw-semibold">Lugar de entrega:</h6>
+                            <p id="infoCliente" class="align-right">Industrial 675, Lima 15081 (LIMA, AV. INDUSTRIAL)</p>
+                        </div>
                     </div>
-                    <div class="info-detail">
-                        <h6>Lugar de entrega:</h6>
-                        <p id="infoCliente" class="align-right">Industrial 675, Lima 15081 (LIMA, AV. INDUSTRIAL)</p>
+                    <div  class="d-flex flex-column gap-2">
+                        <div class="info-detail">
+                            <h6 class="fw-semibold">Cliente:</h6>
+                            <p id="info-costo">Ferreyros S.A. - Sandy Díaz</p>
+                        </div>
+                        <div class="info-detail">
+                            <h6 class="fw-semibold">Fecha de entrega máx:</h6>
+                            <p id="info-venta">24/7/2024</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="info-detail">
-                        <h6>Cliente:</h6>
-                        <p id="info-costo">Ferreyros S.A. - Sandy Díaz</p>
+                    <div  class="d-flex flex-column gap-2">
+                        <div class="info-detail">
+                            <h6 class="fw-semibold">Submission Date:</h6>
+                            <p id="info-costo-1">24/7/2024</p>
+                        </div><a class="link-p" href="#">
+                            <h6 class="fw-semibold"><a href="#"><span style="color:rgb(5, 33, 111);; background-color: rgb(255, 255, 255);">Correo adjunto
+                                        de Req</span></a></h6>
+                        </a>
                     </div>
-                    <div class="info-detail">
-                        <h6>Fecha de entrega máx:</h6>
-                        <p id="info-venta">24/7/2024</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="info-detail">
-                        <h6>Submission Date:</h6>
-                        <p id="info-costo-1">24/7/2024</p>
-                    </div><a class="link-p" href="#">
-                        <h6><a href="#"><span style="color: rgb(58, 58, 60); background-color: rgb(255, 255, 255);">Correo adjunto de Req</span></a></h6>
-                    </a>
                 </div>
             </div>
+           
+            
             <div class="tarjeta">
                 <h4>Comparar </h4>
                 <div class="info-even-row">
                     <div>
-                        <h5>Cotización FIG PDF</h5>
+                        <h5 class="mb-3 fw-bold">Cotización FIG PDF</h5>
                         <div class="ratio ratio-16x9"><iframe id="pdfCotizacion" src="https://thesourdoughjourney.com/wp-content/uploads/2021/04/Bulk-O-Matic-V1-04_25_21.pdf"></iframe></div>
                     </div>
                     <div>
-                        <h5>OC Cliente PDF</h5>
+                        <h5 class="fw-bold mb-3">OC Cliente PDF</h5>
                         <div class="ratio ratio-16x9"><iframe id="pdfOC" src="https://thesourdoughjourney.com/wp-content/uploads/2021/04/Bulk-O-Matic-V1-04_25_21.pdf"></iframe></div>
                     </div>
                 </div>
