@@ -121,73 +121,82 @@
     <div id="page-wraper">
         <div id="top-menu" class="buttons">
             <h3 id="page-title">Ventas: Análisis de ofertas</h3>
-            <div class="corner-group"><a class="btn" role="button" id="btnACompras">Enviar a compras</a><a class="btn" role="button" id="btnCotizaciones" href="Ventas/Cotizaciones.html">Cotizaciones: n</a></div>
+            <div class="corner-group"><a class="btn fw-bold" role="button" id="btnACompras">Enviar a compras</a><a class="btn fw-bold" role="button" id="btnCotizaciones" href="Ventas/Cotizaciones.html">Cotizaciones: n</a></div>
         </div>
         <div id="content" class="content-column">
-            <div class="tarjeta row-direction">
-                <div>
-                    <h4 id="infoReqCot">Info R2024-871</h4>
-                    <div class="info-detail">
-                        <h6>Nombre de req:</h6>
-                        <p id="infoNombreReq" class="align-right">HERRAMIENTAS Y ACTIVOS IMPLEMENTACIÓN DE TALLER PROP. BUENAVENTURA</p>
+            <div class="tarjeta">
+                <h4 id="infoReqCot">Info R2024-871</h4>
+                <div class=" d-flex gap-5">
+                    <div class="d-flex flex-column  gap-2 ">
+                
+                        <div class="info-detail">
+                            <h6 class="fw-semibold">Nombre de req:</h6>
+                            <p id="infoNombreReq" class="align-right">HERRAMIENTAS Y ACTIVOS IMPLEMENTACIÓN DE TALLER PROP. BUENAVENTURA
+                            </p>
+                        </div>
+                        <div class="info-detail">
+                            <h6 class="fw-semibold">Cliente:</h6>
+                            <p id="infoCliente" class="align-right">Empresa: nombre de contacto</p>
+                        </div>
+                        <div class="info-detail">
+                            <h6 class="fw-semibold">Validez de cotización:</h6>
+                            <input type="text" id="cotizacion-validez" class="info-input form-control-sm " placeholder="Validez">
+                        </div>
+                        <div class="info-detail">
+                            <h6 class="fw-semibold">Moneda:</h6>
+                            <select id="cotizacion-moneda" class="form-control-sm ">
+                                <option value="Soles">Soles</option>
+                                <option value="Dolares">Dólares</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="info-detail">
-                        <h6>Cliente:</h6>
-                        <p id="infoCliente" class="align-right">Empresa: nombre de contacto</p>
+                    <div class="d-flex flex-column  gap-2 ">
+                        <div class="info-detail">
+                            <h6 class="fw-semibold">Fecha de registro:</h6>
+                            <p id="infoFecha">24/7/2024</p>
+                        </div>
+                        <div class="info-detail">
+                            <h6 class="fw-semibold">Precio costo total (S/.):</h6>
+                            <p id="info-costo">n</p>
+                        </div>
+                        <div class="info-detail">
+                            <h6 class="fw-semibold">Precio venta total (S/.):</h6>
+                            <p id="info-venta">n</p>
+                        </div>
+                        <div class="info-detail">
+                            <h6 class="fw-semibold">Gross margin sin otros costos (S/.):</h6>
+                            <p id="info-gm1">n</p>
+                        </div>
                     </div>
-                    <div class="info-detail">
-                        <h6>Validez de cotización:</h6><input type="text" id="cotizacion-validez" class="info-input">
-                    </div>
-                    <div class="info-detail">
-                        <h6>Moneda:</h6><select id="cotizacion-moneda">
-                            <option value="Soles">Soles</option>
-                            <option value="Dolares">Dólares</option>
-                        </select>
-                    </div>
-                </div>
-                <div>
-                    <div class="info-detail">
-                        <h6>Fecha de registro:</h6>
-                        <p id="infoFecha">24/7/2024</p>
-                    </div>
-                    <div class="info-detail">
-                        <h6>Precio costo total (S/.):</h6>
-                        <p id="info-costo">n</p>
-                    </div>
-                    <div class="info-detail">
-                        <h6>Precio venta total (S/.):</h6>
-                        <p id="info-venta">n</p>
-                    </div>
-                    <div class="info-detail">
-                        <h6>Gross margin sin otros costos (S/.):</h6>
-                        <p id="info-gm1">n</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="info-detail">
-                        <h6>Lugar de entrega:</h6>
-                        <p id="info-lugar-entrega">n</p>
-                    </div>
-                    <div class="info-detail">
-                        <h6>Transporte estimado(S/.):</h6><input type="text" id="info-transporte" class="info-input">
-                    </div>
-                    <div class="info-detail">
-                        <h6>Otros costos (S/.):</h6><input type="text" id="info-otros" class="info-input">
-                    </div>
-                    <div class="info-detail">
-                        <h6>Gross margin (S/.):</h6>
-                        <p id="info-gm2">n</p>
-                    </div>
-                    <div class="info-detail">
-                        <h6>Gross margin (%):</h6>
-                        <p id="info-gm3">n</p>
+                    <div class="d-flex flex-column  gap-2 ">
+                        <div class="info-detail">
+                            <h6 class="fw-semibold">Lugar de entrega:</h6>
+                            <p id="info-lugar-entrega">n</p>
+                        </div>
+                        <div class="info-detail">
+                            <h6 class="fw-semibold ">Transporte estimado(S/.):</h6>
+                            <input type="text" id="info-transporte" class="info-input" placeholder="Transporte">
+                        </div>
+                        <div class="info-detail">
+                            <h6 class="fw-semibold ">Otros costos (S/.):</h6>
+                            <input type="text" id="info-otros" class="info-input"  placeholder="Otros">
+                        </div>
+                        <div class="info-detail">
+                            <h6 class="fw-semibold">Gross margin (S/.):</h6>
+                            <p id="info-gm2">n</p>
+                        </div>
+                        <div class="info-detail">
+                            <h6 class="fw-semibold">Gross margin (%):</h6>
+                            <p id="info-gm3">n</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            
             <div class="tarjeta">
                 <div class="card-title-group">
                     <h4>Productos planilla:&nbsp;<span id="countPlanilla">n</span></h4>
-                    <div class="corner-group"><button class="btn" id="Nuevo-producto-planilla" type="button" data-bs-target="#modal-nuevo-producto-planilla" data-bs-toggle="modal">+ Producto</button></div>
+                    <div class="corner-group"><button class="btn fw-bold" id="Nuevo-producto-planilla" type="button" data-bs-target="#modal-nuevo-producto-planilla" data-bs-toggle="modal">+ Producto</button></div>
                 </div>
                 <div class="table-responsive" id="tblProductosSolicitados">
                     <table class="table">
@@ -213,7 +222,7 @@
             <div class="tarjeta">
                 <div class="card-title-group">
                     <h4>Comparar precio:&nbsp;<span id="countComparacion">n</span></h4>
-                    <div class="corner-group"><input type="text" id="input-gm" class="info-input"><button class="btn" id="btn-gm" type="button">Establecer GM %</button></div>
+                    <div class="corner-group"><input type="text" id="input-gm" class="info-input fw-semibold " placeholder="Type Here"><button class="btn fw-bold" id="btn-gm" type="button">Establecer GM %</button></div>
                 </div>
                 <div class="table-responsive" id="tblProductosOfrecidos">
                     <table class="table">
@@ -283,45 +292,52 @@
             <div id="tarjeta-detalle" class="tarjeta">
                 <div class="card-title-group">
                     <h4>Detalle de producto</h4>
-                    <div class="corner-group"><button class="btn" id="btnCancelar" type="button">Cancelar</button></div>
-                    <div class="corner-group"><button class="btn" id="btnCancelarProducto" type="button">Cancelar</button><button class="btn btn-primary" id="btnGuardarProducto" type="button">Guardar</button><button class="btn b" id="btnEditarProducto" type="button">Editar</button></div>
+                    <div class="corner-group"><button class="btn fw-bold" id="btnCancelar" type="button">Cancelar</button></div>
+                    <div class="corner-group"><button class="btn fw-bold" id="btnCancelarProducto" type="button">Cancelar</button><button class="fw-bold  btn btn-primary" id="btnGuardarProducto" type="button">Guardar</button><button class="btn b fw-bold" id="btnEditarProducto" type="button">Editar</button></div>
                 </div>
                 <div class="info-even-row">
                     <div class="info-column">
-                        <h6>Descripción producto proveedor:</h6><textarea id="detail-dsc-producto-prov" class="info-input long-text" disabled="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus mi risus, et euismod magna rhoncus a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis ligula orci. </textarea>
+                        <h6 class="fw-semibold">Descripción producto proveedor:</h6><textarea id="detail-dsc-producto-prov" class="info-input long-text" disabled="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus mi risus, et euismod magna rhoncus a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis ligula orci. </textarea>
                     </div>
                     <div class="info-column">
-                        <h6>Descripción producto cliente:</h6><textarea id="detail-dsc-producto-cliente" class="info-input long-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus mi risus, et euismod magna rhoncus a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis ligula orci. </textarea>
+                        <h6 class="fw-semibold">Descripción producto cliente:</h6><textarea id="detail-dsc-producto-cliente" class="info-input long-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus mi risus, et euismod magna rhoncus a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis ligula orci. </textarea>
                     </div>
                 </div>
                 <div class="info-even-row">
                     <div class="info-detail">
-                        <h6>Proveedor:</h6><input type="text" id="detail-prov" class="info-input" disabled="">
+                        <h6 class="fw-semibold">Proveedor:</h6><input type="text" id="detail-prov" class="info-input" disabled="">
                     </div>
                     <div class="info-detail">
-                        <h6>Imagen referencial:</h6><input type="file" id="detail-img">
-                    </div>
-                </div>
-                <div class="info-even-row">
-                    <div class="info-detail">
-                        <h6>Link:</h6><input type="text" id="detail-link" class="info-input">
-                    </div>
-                    <div class="info-detail">
-                        <h6>Ficha tecnica:</h6><input type="file" id="detail-ficha">
+                        <h6 class="fw-semibold">Imagen referencial:</h6>
+                       <div><input type="file" id="detail-img" class="form-control"> </div>
                     </div>
                 </div>
                 <div class="info-even-row">
                     <div class="info-detail">
-                        <h6>Tiempo de entrega de proveedor (días):</h6><input type="text" id="detail-tiempo-prov" class="info-input">
+                        <h6 class="fw-semibold">Link:</h6>
+                        <input type="text" id="detail-link" class="info-input form-control-sm  " placeholder="Type Link">
                     </div>
                     <div class="info-detail">
-                        <h6>Tiempo de entrega a cliente (días):</h6><input type="text" id="detail-tiempo-cliente" class="info-input">
+                        <h6 class="fw-semibold">Ficha tecnica:</h6>
+                        <div><input type="file" id="detail-ficha" class="form-control"></div>
                     </div>
                 </div>
                 <div class="info-even-row">
                     <div class="info-detail">
-                        <h6>Cantidad ofrecida:</h6>
-                        <div class="info-group"><input type="number" id="detail-cantidad-ofr" class="info-input" disabled="" value="5"><select id="detail-und-sol">
+                        <h6 class="fw-semibold">Tiempo de entrega de proveedor (días):</h6>
+                        <input type="text" id="detail-tiempo-prov" class="info-input form-control-sm" placeholder="Type Días" >
+                    </div>
+                    <div class="info-detail">
+                        <h6 class="fw-semibold">Tiempo de entrega a cliente (días):</h6>
+                        <input type="text" id="detail-tiempo-cliente" class="info-input form-control-sm" placeholder="Type Dias">
+                    </div>
+                </div>
+                <div class="info-even-row">
+                    <div class="info-detail">
+                        <h6 class="fw-semibold">Cantidad ofrecida:</h6>
+                        <div class="info-group">
+                            <input type="number" id="detail-cantidad-ofr" class="info-input border form-control-sm" disabled="" value="5">
+                            <select id="detail-und-sol" class="form-control-sm">
                                 <option value="Unidad" selected="">Und.</option>
                                 <option value="Kg">Kg</option>
                                 <option value="Bolsas">b</option>
@@ -329,8 +345,10 @@
                             </select></div>
                     </div>
                     <div class="info-detail">
-                        <h6>Cantidad solocitada:</h6>
-                        <div class="info-group"><input type="number" class="info-input" disabled="" value="5"><select id="detail-und-sol">
+                        <h6 class="fw-semibold">Cantidad solocitada:</h6>
+                        <div class="info-group">
+                            <input type="number" class="info-input form-control-sm border " disabled="" value="5">
+                            <select id="detail-und-sol" class="form-control-sm">
                                 <option value="Unidad" selected="">Und.</option>
                                 <option value="Kg">Kg</option>
                                 <option value="Bolsas">b</option>
@@ -340,35 +358,38 @@
                 </div>
                 <div class="info-even-row">
                     <div class="info-detail">
-                        <h6>Costo por unidad sin IGV (S/.):</h6><input type="text" id="detail-costo-und" class="info-input">
+                        <h6 class="fw-semibold">Costo por unidad sin IGV (S/.):</h6>
+                        <input type="text" id="detail-costo-und" class="info-input form-control-sm" placeholder="Price">
                     </div>
                     <div class="info-detail">
-                        <h6>Precio de venta por und (S/.):</h6><input type="text" id="detail-precio-und" class="info-input">
+                        <h6 class="fw-semibold">Precio de venta por und (S/.):</h6>
+                        <input type="text" id="detail-precio-und" class="info-input form-control-sm" placeholder="Price">
                     </div>
                 </div>
                 <div class="info-even-row">
                     <div class="info-detail">
-                        <h6>Costo total (S/.):</h6>
+                        <h6 class="fw-semibold">Costo total (S/.):</h6>
                         <p id="detail-costo-total">Paragraph</p>
                     </div>
                     <div class="info-detail">
-                        <h6>Precio de venta total (S/.):</h6>
+                        <h6 class="fw-semibold">Precio de venta total (S/.):</h6>
                         <p id="detail-precio-total">Paragraph</p>
                     </div>
                 </div>
                 <div class="info-even-row">
                     <div class="info-detail">
-                        <h6>GM (S/.):</h6>
+                        <h6 class="fw-semibold">GM (S/.):</h6>
                         <p id="detail-gm-soles">Paragraph</p>
                     </div>
                     <div class="info-detail">
-                        <h6>GM (%):</h6>
+                        <h6 class="fw-semibold">GM (%):</h6>
                         <p id="detail-gm-porc">Paragraph</p>
                     </div>
                 </div>
                 <div>
-                    <h5>Buscar productos en historial:&nbsp;</h5>
-                    <div class="input-div search"><input type="search" id="input-search" class="search-input" autocomplete="on" placeholder="Introduce palabras clave separadas por ;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-search">
+                    <h5 class="mb-3 ">Buscar productos en historial:&nbsp;</h5>
+                    <div class="input-div search">
+                        <input type="search" id="input-search" class="search-input form-control" autocomplete="on" placeholder="Introduce palabras clave separadas por ;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-search">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
                             <path d="M21 21l-6 -6"></path>
@@ -447,20 +468,20 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus mi risus, et euismod magna rhoncus a. <br>Class aptent taciti sociosqu ad litora torquent per conubia nostra, <br>per inceptos himenaeos. <br>Donec quis ligula orci.&nbsp;</p>
                         <div class="info-even-row">
                             <div class="info-detail">
-                                <h6>Contacto de proveedor:</h6>
+                                <h6 class="fw-semibold">Contacto de proveedor:</h6>
                                 <p class="align-right">Nombre contacto<br>Numero<br>Correo</p>
                             </div>
                             <div>
                                 <div class="info-detail">
-                                    <h6>Oferta:</h6><a href="#">ID</a>
+                                    <h6 class="fw-semibold">Oferta:</h6><a href="#">ID</a>
                                 </div>
                                 <div class="info-detail">
-                                    <h6>Costo por unidad:</h6>
+                                    <h6 class="fw-semibold">Costo por unidad:</h6>
                                     <p>Valor moneda</p>
                                 </div>
                             </div>
                         </div>
-                        <h6>Ordenes de compra:</h6>
+                        <h6 class="fw-semibold mb-3">Ordenes de compra:</h6>
                         <div class="table-responsive" id="tblOCs">
                             <table class="table">
                                 <thead>
@@ -499,7 +520,7 @@
             <div class="tarjeta">
                 <div class="card-title-group">
                     <h4>PDF vista previa</h4>
-                    <div class="corner-group"><button class="btn" id="btnGrupo" type="button">Añadir componentes de grupo</button><button class="btn" id="btnRgnVP" type="button">Regenerar vista previa</button><button class="btn btn-primary" id="btnGenerarCot" type="button">Generar cotización</button></div>
+                    <div class="corner-group"><button class="btn fw-bold" id="btnGrupo" type="button">Añadir componentes de grupo</button><button class="btn fw-bold" id="btnRgnVP" type="button">Regenerar vista previa</button><button class="btn btn-primary fw-bold" id="btnGenerarCot" type="button">Generar cotización</button></div>
                 </div>
                 <div class="ratio ratio-16x9"><iframe id="pdf" src="https://thesourdoughjourney.com/wp-content/uploads/2021/04/Bulk-O-Matic-V1-04_25_21.pdf"></iframe></div>
             </div>
