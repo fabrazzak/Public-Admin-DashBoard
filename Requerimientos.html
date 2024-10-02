@@ -142,20 +142,21 @@
         <div id="content" class="content-column">
             <div class="tarjeta row-direction">
                 <div>
-                    <h6>Buscar:</h6>
-                    <div class="input-div search"><input type="search" id="input-search" class="search-input" autocomplete="on" placeholder="Introduce palabras clave separadas por ;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-search">
+                    <h6 class="fw-bold mb-2">Buscar:</h6>
+                    <div class="input-div search">
+                        <input type="search" id="input-search" class="search-input form-control-sm" autocomplete="on" placeholder="Introduce palabras clave separadas por ;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-search">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
                             <path d="M21 21l-6 -6"></path>
                         </svg></div>
                 </div>
                 <div>
-                    <h6>Fecha inicial:</h6>
-                    <div class="input-div"><input id="input-fecha1" class="date-input" type="date"></div>
+                    <h6 class="fw-bold mb-2">Fecha inicial:</h6>
+                    <div class="input-div"><input id="input-fecha1 form-control-sm" class="date-input" type="date"></div>
                 </div>
                 <div>
-                    <h6>Fecha final:</h6>
-                    <div class="input-div"><input id="input-fecha2" class="date-input" type="date"></div>
+                    <h6 class="fw-bold mb-2">Fecha final:</h6>
+                    <div class="input-div"><input id="input-fecha2" class="date-input form-control-sm" type="date"></div>
                 </div>
             </div>
             <div class="tarjeta">
@@ -234,51 +235,54 @@
             <div class="tarjeta">
                 <div class="card-title-group">
                     <h4 id="tituloDetalleReq">Detalles de requerimiento&nbsp;</h4>
-                    <div class="corner-group"><button class="btn" id="btnCancelarReq" type="button">Cancelar</button><button class="btn btn-primary" id="btnGuardarReq" type="button">Guardar</button><button class="btn" id="btnEditarRequerimiento" type="button">Editar</button></div>
+                    <div class="corner-group"><button class="btn fw-bold" id="btnCancelarReq" type="button">Cancelar</button><button class="btn fw-bold btn-primary" id="btnGuardarReq" type="button">Guardar</button><button class="btn fw-bold" id="btnEditarRequerimiento" type="button">Editar</button></div>
                 </div>
-                <div id="inforReq" class="info-even-row">
-                    <div>
+                <div id="inforReq" class="info-even-row mt-3">
+                    <div class="d-flex flex-column gap-3">
                         <div class="info-detail">
-                            <h6>Cod Req:</h6>
+                            <h6 class="fw-bold">Cod Req:</h6>
                             <p id="detalleCodReq">info</p>
                         </div>
                         <div class="info-detail">
-                            <h6>Nombre:</h6><input type="text" id="detalleNombre" class="info-input">
+                            <h6 class="fw-bold">Nombre:</h6>
+                            <input type="text" id="detalleNombre" class="info-input form-control-sm" placeholder=" Type Nombre">
                         </div>
                         <div class="info-detail">
-                            <h6>Cliente:</h6><button class="btn" id="detalleCliente" type="button" data-bs-target="#modal-clientes" data-bs-toggle="modal">Ninguno elegido<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-chevron-down">
+                            <h6 class="fw-bold">Cliente:</h6><button class="btn fw-semibold" id="detalleCliente" type="button" data-bs-target="#modal-clientes" data-bs-toggle="modal">Ninguno elegido<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-chevron-down">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M6 9l6 6l6 -6"></path>
                                 </svg></button>
                         </div>
                         <div class="info-detail">
-                            <h6>Contacto cliente:</h6><button class="btn" id="detalleContacto" type="button" data-bs-target="#modal-contactos" data-bs-toggle="modal">Ninguno elegido<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-chevron-down">
+                            <h6 class="fw-bold">Contacto cliente:</h6><button class="btn fw-semibold" id="detalleContacto" type="button" data-bs-target="#modal-contactos" data-bs-toggle="modal">Ninguno elegido<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-chevron-down">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M6 9l6 6l6 -6"></path>
                                 </svg></button>
                         </div>
                     </div>
-                    <div>
+                    <div class="d-flex flex-column gap-3">
                         <div class="info-detail">
-                            <h6>Lugar de entrega:</h6><button class="btn" id="detalleLugar" type="button" data-bs-target="#modal-lugares" data-bs-toggle="modal">Ninguno elegido<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-chevron-down">
+                            <h6 class="fw-bold">Lugar de entrega:</h6><button class="btn fw-semibold" id="detalleLugar" type="button" data-bs-target="#modal-lugares" data-bs-toggle="modal">Ninguno elegido<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-chevron-down">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M6 9l6 6l6 -6"></path>
                                 </svg></button>
                         </div>
                         <div class="info-detail">
-                            <h6>Adjuntos:</h6><a id="detalleAdjuntoLink" href="#">Abrir archivo<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-link">
+                            <h6 class="fw-bold">Adjuntos:</h6><a id="detalleAdjuntoLink" href="#">Abrir archivo<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-link">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M9 15l6 -6"></path>
                                     <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"></path>
                                     <path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"></path>
-                                </svg></a><input type="file" id="detalleAdjunto">
+                                </svg></a>
+                                <div><input type="file" id="detalleAdjunto" class="form-control"></div>
                         </div>
                         <div class="info-detail">
-                            <h6>Fecha de registro:</h6>
+                            <h6 class="fw-bold">Fecha de registro:</h6>
                             <p id="detalleFecha">info</p>
                         </div>
                         <div class="info-detail">
-                            <h6>Estado:</h6><select id="detalleEstado">
+                            <h6 class="fw-bold">Estado:</h6>
+                            <select id="detalleEstado" class="form-control-sm">
                                 <option value="1. Registrado" selected="">1. Registrado</option>
                                 <option value="2. Con Planilla">2. Con Planilla</option>
                                 <option value="3. Con Oferta de Proveedor">3. Con Oferta de Proveedor</option>
@@ -295,7 +299,7 @@
                         </div>
                     </div>
                 </div>
-                <h5>Planilla:&nbsp;<span id="countPlanilla">n</span></h5>
+                <h5 class="fw-bold">Planilla:&nbsp;<span id="countPlanilla">n</span></h5>
                 <div class="table-group">
                     <div class="table-responsive" id="tblPlanilla">
                         <table class="table">
@@ -318,7 +322,7 @@
                         </table>
                     </div>
                 </div>
-                <h5>Ofertas de proveedores:&nbsp;<span id="countOfertas">n</span></h5>
+                <h5 class="fw-bold my-2">Ofertas de proveedores:&nbsp;<span id="countOfertas">n</span></h5>
                 <div class="table-group">
                     <div class="table-responsive" id="tblOfertas">
                         <table class="table">
@@ -341,7 +345,7 @@
                         </table>
                     </div>
                 </div>
-                <h5>Cotizaciones:&nbsp;<span id="countCotizaciones">n</span></h5>
+                <h5 class="fw-bold my-2">Cotizaciones:&nbsp;<span id="countCotizaciones">n</span></h5>
                 <div class="table-group">
                     <div class="table-responsive" id="tblCotizaciones">
                         <table class="table">
@@ -364,7 +368,7 @@
                         </table>
                     </div>
                 </div>
-                <h5>OC Clientes:&nbsp;<span id="countOCClientes">n</span></h5>
+                <h5 class="fw-bold my-2" >OC Clientes:&nbsp;<span id="countOCClientes">n</span></h5>
                 <div class="table-group">
                     <div class="table-responsive" id="tblOCClientes">
                         <table class="table">
@@ -387,7 +391,7 @@
                         </table>
                     </div>
                 </div>
-                <h5>OC Proveedores:&nbsp;<span id="countOCProveedores">n</span></h5>
+                <h5 class="fw-bold my-2">OC Proveedores:&nbsp;<span id="countOCProveedores">n</span></h5>
                 <div class="table-group">
                     <div class="table-responsive" id="tblOCProveedores">
                         <table class="table">
@@ -410,7 +414,7 @@
                         </table>
                     </div>
                 </div>
-                <h5>Facturas/Comprobantes de pago:&nbsp;<span id="countFacturas">n</span></h5>
+                <h5 class="fw-bold my-2">Facturas/Comprobantes de pago:&nbsp;<span id="countFacturas">n</span></h5>
                 <div class="table-group">
                     <div class="table-responsive" id="tblFacturas">
                         <table class="table">
@@ -433,7 +437,7 @@
                         </table>
                     </div>
                 </div>
-                <h5>Abonos:&nbsp;<span id="countAbonos">n</span></h5>
+                <h5 class="fw-bold my-2">Abonos:&nbsp;<span id="countAbonos">n</span></h5>
                 <div class="table-group">
                     <div class="table-responsive" id="tblAbonos">
                         <table class="table">
@@ -456,7 +460,7 @@
                         </table>
                     </div>
                 </div>
-                <h5>Guías:&nbsp;<span id="countGuias">n</span></h5>
+                <h5 class="fw-bold my-2">Guías:&nbsp;<span id="countGuias">n</span></h5>
                 <div class="table-group">
                     <div class="table-responsive">
                         <table class="table" id="tblGuias">
