@@ -154,6 +154,7 @@ p {
   display: flex;
   flex-direction: column;
   color: var(--bs-primary-text-emphasis);
+  gap: 10px;
 }
 
 /* Comment display */
@@ -164,7 +165,7 @@ p {
 }
 
 .deck-title:hover {
-  background-color: var(--bs-form-invalid-color);
+  /* background-color: var(--bs-form-invalid-color); */
 }
 
 .deck-title:hover + .comment {
