@@ -117,20 +117,22 @@
         <div id="content" class="content-column">
             <div class="tarjeta row-direction">
                 <div>
-                    <h6>Buscar:</h6>
-                    <div class="input-div search"><input type="search" id="input-search" class="search-input" autocomplete="on" placeholder="Introduce palabras clave separadas por ;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-search">
+                    <h6 class="fw-semibold mb-2">Buscar:</h6>
+                    <div class="input-div search">
+                        <input  type="search" id="input-search" class="search-input form-control-sm" autocomplete="on" placeholder="Introduce palabras clave separadas por ;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-search">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
                             <path d="M21 21l-6 -6"></path>
                         </svg></div>
                 </div>
                 <div>
-                    <h6>Fecha inicial:</h6>
-                    <div class="input-div"><input id="input-fecha1" class="date-input" type="date"></div>
+                    <h6 class="fw-semibold mb-2" >Fecha inicial:</h6>
+                    <div class="input-div">
+                        <input id="input-fecha1" class="date-input form-control-sm" type="date"></div>
                 </div>
                 <div>
-                    <h6>Fecha final:</h6>
-                    <div class="input-div"><input id="input-fecha2" class="date-input" type="date"></div>
+                    <h6 class="fw-semibold mb-2" >Fecha final:</h6>
+                    <div class="input-div"><input id="input-fecha2" class="date-input form-control-sm" type="date"></div>
                 </div>
             </div>
             <div class="tarjeta">
@@ -177,12 +179,12 @@
             <div class="tarjeta">
                 <div class="card-title-group">
                     <h4>Detalle de cotización</h4>
-                    <div class="corner-group"><button class="btn" id="btnCancelarCotizacion" type="button">Cancelar</button><button class="btn btn-primary" id="btnGuardarCotizacion" type="button">Guardar</button><button class="btn b" id="btnEditarCotizacion" type="button">Editar</button></div>
+                    <div class="corner-group"><button class="btn fw-bold" id="btnCancelarCotizacion" type="button">Cancelar</button><button class="fw-bold btn btn-primary" id="btnGuardarCotizacion" type="button">Guardar</button><button class="btn b fw-bold" id="btnEditarCotizacion" type="button">Editar</button></div>
                 </div>
                 <div class="info-column">
-                    <h6>Observaciones en cotización:</h6><textarea id="detail-observacion" class="info-input long-text" disabled="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus mi risus, et euismod magna rhoncus a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis ligula orci. </textarea>
+                    <h6 class="fw-semibold  ">Observaciones en cotización:</h6><textarea id="detail-observacion" class="info-input long-text" disabled="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus mi risus, et euismod magna rhoncus a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis ligula orci. </textarea>
                 </div>
-                <h6>Productos:&nbsp;<span id="countProductosCotizacion">n</span></h6>
+                <h6 class="fw-semibold">Productos:&nbsp;<span id="countProductosCotizacion">n</span></h6>
                 <div class="table-responsive" id="tblProductos">
                     <table class="table">
                         <thead>
@@ -215,11 +217,11 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="ratio ratio-16x9"><iframe id="pdf" src="https://thesourdoughjourney.com/wp-content/uploads/2021/04/Bulk-O-Matic-V1-04_25_21.pdf"></iframe></div>
+                <div class="ratio mt-3 ratio-16x9"><iframe id="pdf" src="https://thesourdoughjourney.com/wp-content/uploads/2021/04/Bulk-O-Matic-V1-04_25_21.pdf"></iframe></div>
             </div>
         </div>
     </div>
-    <div id="historialGrupo">
+    <d iv id="historialGrupo" >
         <div id="historialContent" class="tarjeta">
             <div id="historialIzquierda">
                 <div id="searchHeader">
@@ -311,7 +313,7 @@
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M5.821 4.91c3.898 -2.765 9.469 -2.539 13.073 .536c3.667 3.127 4.168 8.238 1.152 11.897c-2.842 3.447 -7.965 4.583 -12.231 2.805l-.232 -.101l-4.375 .931l-.075 .013l-.11 .009l-.113 -.004l-.044 -.005l-.11 -.02l-.105 -.034l-.1 -.044l-.076 -.042l-.108 -.077l-.081 -.074l-.073 -.083l-.053 -.075l-.065 -.115l-.042 -.106l-.031 -.113l-.013 -.075l-.009 -.11l.004 -.113l.005 -.044l.02 -.11l.022 -.072l1.15 -3.451l-.022 -.036c-2.21 -3.747 -1.209 -8.392 2.411 -11.118l.23 -.168z" stroke-width="0" fill="currentColor"></path>
             </svg></button>
-    </div>
+    </d>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
