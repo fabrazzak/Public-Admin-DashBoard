@@ -144,7 +144,7 @@
                 <div>
                     <h6 class="fw-bold mb-2">Buscar:</h6>
                     <div class="input-div search">
-                        <input type="search" id="input-search" class="search-input form-control-sm" autocomplete="on" placeholder="Introduce palabras clave separadas por ;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-search">
+                        <input type="search" id="input-search" class="search-input form-control-sm placeholder" autocomplete="on" placeholder="Introduce palabras clave separadas por ;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-search">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
                             <path d="M21 21l-6 -6"></path>
@@ -152,11 +152,11 @@
                 </div>
                 <div>
                     <h6 class="fw-bold mb-2">Fecha inicial:</h6>
-                    <div class="input-div"><input id="input-fecha1 form-control-sm" class="date-input" type="date"></div>
+                    <div class="input-div"><input id="input-fecha1" class="date-input form-control-sm placeholder " type="date"></div>
                 </div>
                 <div>
                     <h6 class="fw-bold mb-2">Fecha final:</h6>
-                    <div class="input-div"><input id="input-fecha2" class="date-input form-control-sm" type="date"></div>
+                    <div class="input-div"><input id="input-fecha2" class="date-input form-control-sm placeholder" type="date"></div>
                 </div>
             </div>
             <div class="tarjeta">
@@ -235,7 +235,7 @@
             <div class="tarjeta">
                 <div class="card-title-group">
                     <h4 id="tituloDetalleReq">Detalles de requerimiento&nbsp;</h4>
-                    <div class="corner-group"><button class="btn fw-bold" id="btnCancelarReq" type="button">Cancelar</button><button class="btn fw-bold btn-primary" id="btnGuardarReq" type="button">Guardar</button><button class="btn fw-bold" id="btnEditarRequerimiento" type="button">Editar</button></div>
+                    <div class="corner-group"><button class="btn fw-bold secondary-btn" id="btnCancelarReq" type="button">Cancelar</button><button class="btn fw-bold btn-primary" id="btnGuardarReq" type="button">Guardar</button><button class="btn fw-bold secondary-btn" id="btnEditarRequerimiento" type="button">Editar</button></div>
                 </div>
                 <div id="inforReq" class="info-even-row mt-3">
                     <div class="d-flex flex-column gap-3">
@@ -254,7 +254,8 @@
                                 </svg></button>
                         </div>
                         <div class="info-detail">
-                            <h6 class="fw-bold">Contacto cliente:</h6><button class="btn fw-semibold" id="detalleContacto" type="button" data-bs-target="#modal-contactos" data-bs-toggle="modal">Ninguno elegido<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-chevron-down">
+                            <h6 class="fw-bold">Contacto cliente:</h6>
+                            <button class="btn fw-semibold" id="detalleContacto" type="button" data-bs-target="#modal-contactos" data-bs-toggle="modal">Ninguno elegido<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-chevron-down">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M6 9l6 6l6 -6"></path>
                                 </svg></button>

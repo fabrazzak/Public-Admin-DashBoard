@@ -481,10 +481,10 @@ select:disabled {
     position: sticky;
   }
 
- #content.content-mob{
-  display: flex;
-  flex-direction: column;
- }
+  #content.content-mob {
+    display: flex;
+    flex-direction: column;
+  }
 
 
   .btn-group {
@@ -499,7 +499,7 @@ select:disabled {
   }
 
   #content {
-    padding: 1.5rem 1.5rem;
+    padding: 1rem 1rem;
 
   }
 
@@ -533,26 +533,52 @@ select:disabled {
     flex-direction: column;
     gap: 1.5rem;
   }
-.comment-title{
-  flex-direction: column; 
-  gap: 15px ;
-}
-.comment-title> p{
-  text-align: left;
-}
-  .deck-title{
-    flex-direction: column;
-  }
-  .deck-row{
+
+  .comment-title {
     flex-direction: column;
     gap: 15px;
   }
-  .info-even-row{
-    display: flex;
-    flex-direction: row;  
-    
+
+  .comment-title>p {
+    text-align: left;
   }
-.deck-info{
-    text-align: left ;
+
+  .deck-title {
+    flex-direction: column;
+  }
+
+  .deck-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .info-even-row {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .deck-info {
+    text-align: left;
+  }
+
+  .card-title-group {
+    flex-direction: column;
+  }
+
+  .corner-group {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+  }
+
+  .corner-group button {
+
+    width: 100%;
+
+  }
+  #inforReq.info-even-row{
+    flex-direction: column;
+
   }
 }
