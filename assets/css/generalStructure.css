@@ -493,6 +493,9 @@ select:disabled {
   .tarjeta {
     padding: 1rem 1rem;
   }
+    .tarjeta.row-direction {
+      flex-direction: column;
+    }
 
   .admin-tarjetas-grupo {
     display: flex;
