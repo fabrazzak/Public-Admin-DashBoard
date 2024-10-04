@@ -573,10 +573,12 @@ select:disabled {
   }
 
   .corner-group button {
-
     width: 100%;
-
   }
+   .corner-group.corner-group-mob{
+    display: flex;
+    flex-direction: row;
+   }
   #inforReq.info-even-row{
     flex-direction: column;
 
