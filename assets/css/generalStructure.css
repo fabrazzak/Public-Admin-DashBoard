@@ -458,15 +458,34 @@ select:disabled {
 }
 
 
+.info-even-row-update {
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+  overflow-x: auto;
+}
+
+.tarjeta {
+  width: 100%;
+}
+
+
+
 
 /* mobile device css code  */
 @media (max-width: 768px) {
 
   #top-menu {
-    padding: 18px 18px;
-    gap: 15px;
+    padding: 10px 18px;
+    gap: 10px;
     flex-direction: column;
+    position: sticky;
   }
+
+  #page-title {
+    font-size: 22px;
+  }
+
+
 
   .btn-group {
     display: flex;
@@ -497,13 +516,15 @@ select:disabled {
   .tarjeta.row-direction {
     flex-direction: column;
   }
-  .info-even-row{
+
+  .info-even-row {
     flex-direction: column;
 
   }
-  .card-title-group{
+
+  .card-title-group {
     flex-direction: column;
-    gap: 15px;  
+    gap: 15px;
 
   }
 
