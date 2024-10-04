@@ -22,7 +22,12 @@
   height: 100vh;
 }
 
+
 .info-even-row.todo {
   height: 100%;
+    width: 100%;
+      overflow-x: auto;
 }
+
+
 

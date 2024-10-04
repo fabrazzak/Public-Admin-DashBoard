@@ -119,7 +119,9 @@
             <h3 id="page-title">Hola [Nombre de usuario]</h3>
         </div>
         <div id="content" class="content-column">
-            <div class="btn-group" role="group"><button class="btn fw-bold" id="btnMVV" type="button" data-bs-target="#toast-1" data-bs-toggle="toast">Misión, visión y valores</button><button class="btn fw-bold" id="btnFlujo" type="button">Plantilla de flujo</button></div>
+            <div class="btn-group-update" role="group">
+                <button class="fw-bold  secondary-btn  w-100" id="btnMVV" type="button" data-bs-target="#toast-1" data-bs-toggle="toast">Misión, visión y valores</button>
+                <button class="fw-bold w-100 secondary-btn" id="btnFlujo" type="button">Plantilla de flujo</button></div>
             <div id="divMVV" class="tarjeta">
                 <div class="info-even-row">
                     <div class="content-column">
@@ -154,28 +156,28 @@
             <div id="divFlujo" class="tarjeta">
                 <h4 class="text-center">Plantilla de flujo Proceso FIG</h4><img src="assets/img/Plantilla%20de%20flujo%20Proceso%20FIG%20-%20Plantilla%20de%20flujo%20de%20procesos%20de%20negocio.jpeg">
             </div>
-            <div class="tarjeta row-direction">
-                <div>
+            <div class="tarjeta-update  row gap-md-0 gap-3 ">
+                <div class="col-12 col-md-8">
                     <h6 class="fw-semibold mb-2">Buscar:</h6>
                     <div class="input-div search">
-                        <input type="search" id="input-search" class="search-input form-control-sm" autocomplete="on" placeholder="Introduce palabras clave separadas por ;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-search">
+                        <input type="search" id="input-search" class="search-input form-control-sm placeholder  " autocomplete="on" placeholder="Introduce palabras clave separadas por ;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-search">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
                             <path d="M21 21l-6 -6"></path>
                         </svg></div>
                 </div>
-                <div>
+                <div class="col-12 col-md-2">
                     <h6 class="fw-semibold mb-2" >Fecha inicial:</h6>
                     <div class="input-div">
-                        <input id="input-fecha1" class="date-input form-control-sm" type="date"></div>
+                        <input id="input-fecha1" class="date-input form-control-sm placeholder " type="date"></div>
                 </div>
-                <div>
+                <div class="col-12 col-md-2">
                     <h6 class="fw-semibold mb-2" >Fecha final:</h6>
-                    <div class="input-div"><input id="input-fecha2" class="date-input form-control-sm" type="date"></div>
+                    <div class="input-div"><input id="input-fecha2" class="date-input form-control-sm  placeholder " type="date"></div>
                 </div>
             </div>
-            <div class="info-even-row todo row">
-                <div class="col-6 p-4 rounded-4 bg-white">
+            <div class="info-even-row todo">
+                <div class="tarjeta">
                     <h5 class="text-center fw-bold mb-3">Por hacer:&nbsp;<span id="countPorHacer">n</span></h5>
                     <div class="table-responsive">
                         <table class="table" id="tblPorHacer">
@@ -202,7 +204,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-6 p-4 rounded-4 bg-white">
+                <div class="tarjeta">
                     <h5 class="text-center fw-bold mb-3">En progreso:&nbsp;<span id="countEnProgreso">n</span></h5>
                     <div class="table-responsive">
                         <table class="table" id="tblProgreso">
@@ -229,7 +231,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-6 p-4 rounded-4 bg-white">
+                <div class="tarjeta">
                     <h5 class="text-center fw-bold mb-3">Completo:&nbsp;<span id="countCompleto">n</span></h5>
                     <div class="table-responsive">
                         <table class="table" id="tblCompleto">
@@ -256,7 +258,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-6 p-4 rounded-4 bg-white">
+                <div class="tarjeta">
                     <h5 class="text-center fw-bold mb-3">Congelado:&nbsp;<span id="countCongelado">n</span></h5>
                     <div class="table-responsive">
                         <table class="table " id="tblCongelado">
