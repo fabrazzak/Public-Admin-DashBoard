@@ -481,10 +481,10 @@ select:disabled {
     position: sticky;
   }
 
-  #page-title {
-    font-size: 22px;
-  }
-
+ #content.content-mob{
+  display: flex;
+  flex-direction: column;
+ }
 
 
   .btn-group {
@@ -532,5 +532,27 @@ select:disabled {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+  }
+.comment-title{
+  flex-direction: column; 
+  gap: 15px ;
+}
+.comment-title> p{
+  text-align: left;
+}
+  .deck-title{
+    flex-direction: column;
+  }
+  .deck-row{
+    flex-direction: column;
+    gap: 15px;
+  }
+  .info-even-row{
+    display: flex;
+    flex-direction: row;  
+    
+  }
+.deck-info{
+    text-align: left ;
   }
 }
