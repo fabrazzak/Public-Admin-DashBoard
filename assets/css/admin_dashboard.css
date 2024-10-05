@@ -64,21 +64,18 @@
 .table {
   width: 100%;
   text-align: center;
-  border: 1px solid #e5e1e190;
+  border: 1px solid #aaa;
 
 
 }
 
-.table th,
-.table td {
+.table th {
   vertical-align: middle;
-  background: rgb(206, 212, 240);
+  background-color: #e6e6e6;
+  padding: 0 .5rem;
 
 }
 
-.table tbody td {
-  background: white;
-}
 
 /* Button Link Styling */
 

@@ -198,6 +198,7 @@ a {
   gap: 0.5rem;
   justify-content: center;
   background: #ffffff;
+  font-family: Mulish;
 }
 
 .btn-group {
@@ -220,8 +221,7 @@ a {
   border: 1px solid rgb(5, 33, 111);
   padding: 8px 16px 8px 16px;
   border-radius: 12px;
-
-
+  font-weight: 700;
 }
 
 .secondary-btn:hover {
@@ -232,6 +232,7 @@ a {
 .secondary-btn:active {
   background: rgb(206, 212, 240);
   border: 1px solid rgb(5, 33, 111);
+  background: rgb(206, 212, 240);
 
 }
 
@@ -244,6 +245,7 @@ a {
 .btn-primary {
   background: var(--dark2);
   color: #ffffff;
+  font-family: Mulish;
 }
 
 /* Search */
@@ -266,7 +268,7 @@ input {
 
 
 .search-input {
-  flex-grow: 1;
+  flex-grow: 1 ;
   background: none;
   width: 100%;
 }
@@ -312,7 +314,6 @@ input {
 
 .placeholder {
   color: #9C9D9F;
-  color: rgb(58, 58, 60);
   font-family: Mulish;
   font-size: 16px;
   cursor: pointer;
@@ -320,8 +321,7 @@ input {
 }
 
 .placeholder:focus {
-  color: #3A3A3C;
-  box-shadow: 0px 0px 4px 0px rgb(153, 187, 255);
+  color: #3A3A3C; 
   cursor: text;
 
 }
@@ -412,7 +412,8 @@ select:disabled {
 
 /* Rows */
 
-.info-even-row {
+.info-even-row,
+.inforReq-wraper {
   display: flex;
   gap: 2rem;
 }
@@ -449,6 +450,7 @@ select:disabled {
   border: 1px solid rgb(5, 33, 111);
   border-radius: 12px;
   background: rgb(206, 212, 240);
+  font-family: Mulish;
 
 }
 
@@ -468,6 +470,18 @@ select:disabled {
   width: 100%;
 }
 
+.btn-info-req {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  max-width: 200px;
+  width: 100%;
+  gap: 15px;
+}
+
+.btn-info-req button {
+  width: 100%;
+}
 
 
 
@@ -575,12 +589,27 @@ select:disabled {
   .corner-group button {
     width: 100%;
   }
-   .corner-group.corner-group-mob{
+
+  .corner-group.corner-group-mob {
     display: flex;
     flex-direction: row;
-   }
-  #inforReq.info-even-row{
+  }
+
+  #inforReq.info-even-row {
     flex-direction: column;
 
   }
+
+  .inforReq-wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .btn-search-group {
+    display: flex;
+    flex-direction:column-reverse;    
+    gap: 1rem;
+  }
+
 }
