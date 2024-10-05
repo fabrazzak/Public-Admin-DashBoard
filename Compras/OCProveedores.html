@@ -125,7 +125,7 @@
                 </div>
                 <div>
                     <h6  class="fw-semibold mb-2">Buscar:</h6>
-                    <div class="input-div search"><input type="search" id="input-search-1" class="search-input form-control-sm" autocomplete="on" placeholder="Introduce palabras clave separadas por ;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-search">
+                    <div class="input-div search"><input type="search" id="input-search-1" class="search-input placeholder form-control-sm" autocomplete="on" placeholder="Introduce palabras clave separadas por ;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-search">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
                             <path d="M21 21l-6 -6"></path>
@@ -133,11 +133,11 @@
                 </div>
                 <div>
                     <h6  class="fw-semibold mb-2">Fecha inicial:</h6>
-                    <div class="input-div"><input id="input-fecha1" class="date-input form-control-sm" type="date"></div>
+                    <div class="input-div"><input id="input-fecha1" class="date-input form-control-sm placeholder" type="date"></div>
                 </div>
                 <div>
                     <h6  class="fw-semibold mb-2">Fecha final:</h6>
-                    <div class="input-div"><input id="input-fecha2" class="date-input form-control-sm" type="date"></div>
+                    <div class="input-div"><input id="input-fecha2" class="date-input form-control-sm placeholder" type="date"></div>
                 </div>
             </div>
             <div class="tarjeta">
@@ -251,9 +251,9 @@
             <div id="tarjetaDetalles" class="tarjeta content-column">
                 <div class="card-title-group">
                     <h4>Detalles de orden de compra</h4>
-                    <div class="corner-group"><button class="btn fw-semibold" id="btnCancelarOC" type="button">Cancelar</button><button class="btn fw-semibold btn-primary" id="btnGuardarOC" type="button">Guardar</button><button class="btn b fw-semibold" id="btnEditarOC" type="button">Editar</button></div>
+                    <div class="corner-group"><button class="btn secondary-btn" id="btnCancelarOC" type="button">Cancelar</button><button class=" btn fw-semibold btn-primary" id="btnGuardarOC" type="button">Guardar</button><button class="btn b secondary-btn" id="btnEditarOC" type="button">Editar</button></div>
                 </div>
-                <div class="info-row">
+                <div class="info-row justify-content-between ">
                     <div class="info-detail">
                         <h6 class="fw-semibold">ID:</h6>
                         <p id="ocID" class="align-right">5</p>
@@ -269,18 +269,20 @@
                         </select>
                     </div>
                 </div>
-                <div class="info-row">
+                <div class="info-row justify-content-between">
                     <div class="info-detail">
                         <h6 class="fw-semibold">Garantia:</h6><input type="text" id="ocGarantia" value="1 año">
                     </div>
                     <div class="info-detail">
                         <h6 class="fw-semibold">Lugar de entrega:</h6>
-                        <select id="ocLugarEntrega" class="form-control-sm">
-                            <option value="Entregada">Tapytop SAC: Jr. Tacna Mza. 4a Lote. 1b Tablada de Lurin. VMT ()</option>
-                        </select>
+                        <div>
+                            <select id="ocLugarEntrega" class="w-100 form-control-sm">
+                                <option value="Entregada">Tapytop SAC: Jr. Tacna Mza. 4a Lote. 1b Tablada de Lurin. VMT ()</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <div class="info-row">
+                <div class="info-row justify-content-between">
                     <div class="info-detail">
                         <h6 class="fw-semibold">Fecha de registro</h6>
                         <p id="ocFechaRegistro" class="align-right">24/7/2024 18:18:00</p>
@@ -295,7 +297,7 @@
                 </div><a id="ocPDF" class="link-p" href="#">
                     <h6 class="fw-semibold">OC PDF</h6>
                 </a>
-                <div class="info-row">
+                <div class="info-row justify-content-between">
                     <div class="info-detail">
                         <h6 class="fw-semibold">Moneda:</h6>
                         <p id="ocMoneda" class="align-right">Soles</p>
@@ -310,7 +312,7 @@
                     </div>
                 </div>
                 <div class="info-detail">
-                    <h6 class="fw-semibold" id="ocAbonosTitulo">Abonos:&nbsp;<span id="countAbonos">n</span></h6><button class=" btn fw-bold" id="btnNuevoAbono" type="button">Solicitar abonos</button>
+                    <h6 class="fw-semibold" id="ocAbonosTitulo">Abonos:&nbsp;<span id="countAbonos">n</span></h6><button class=" btn secondary-btn" id="btnNuevoAbono" type="button">Solicitar abonos</button>
                 </div>
                 <div class="table-responsive" id="tblAbonos">
                     <table class="table">
@@ -342,7 +344,7 @@
                     </table>
                 </div>
                 <div class="info-detail">
-                    <h6 class="fw-semibold" id="ocFacturasTitulo">Facturas:&nbsp;<span id="countFacturas">n</span></h6><button class="btn fw-bold" id="btnNuevaFactura" type="button">Añadir factura</button>
+                    <h6 class="fw-semibold" id="ocFacturasTitulo">Facturas:&nbsp;<span id="countFacturas">n</span></h6><button class="btn secondary-btn" id="btnNuevaFactura" type="button">Añadir factura</button>
                 </div>
                 <div class="table-responsive" id="tblFacturas">
                     <table class="table">
@@ -377,9 +379,9 @@
                     </table>
                 </div>
                 <div class="info-detail">
-                    <h6 class="fw-semibold">Productos:&nbsp;<span id="countProductos">n</span></h6><button class="btn fw-bold" id="btnTodosLogistica" type="button">Añadir todos a logistica</button>
+                    <h6 class="fw-semibold">Productos:&nbsp;<span id="countProductos">n</span></h6><button class="btn secondary-btn" id="btnTodosLogistica" type="button">Añadir todos a logistica</button>
                 </div>
-                <div class="info-even-row border" style="padding: 16px;">
+                <div class="info-even-row info-even-row-mob border" style="padding: 16px;">
                     <div class="d-flex flex-column gap-2 mt-3">
                         <h6 class="fw-semibold">Descripción producto proveedor 1</h6>
                         <div class="info-detail">
@@ -397,10 +399,10 @@
                     </div>
                     <div class="d-flex flex-column gap-3 ">
                         <div class="info-detail ">
-                            <h6 class="fw-semibold">En logistica:</h6><button class="btn fw-bold" type="button">Agregar a logística</button>
+                            <h6 class="fw-semibold">En logistica:</h6><button class="btn secondary-btn" type="button">Agregar a logística</button>
                         </div>
                         <div class="table-responsive">
-                            <table class="table">
+                            <table class="table table-striped table-hover ">
                                 <thead>
                                     <tr>
                                         <th>Cantidad</th>
@@ -424,7 +426,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="info-even-row border" style="padding: 16px;">
+                <div class="info-even-row info-even-row-mob border" style="padding: 16px;">
                     <div class="d-flex flex-column gap-2 mt-3">
                         <h6 class="fw-semibold">Descripción producto proveedor 2</h6>
                         <div class="info-detail">
@@ -442,10 +444,10 @@
                     </div>
                     <div  class="d-flex flex-column gap-3 ">
                         <div class="info-detail">
-                            <h6 class="fw-semibold">En logistica:</h6><button class="btn fw-bold" type="button">Agregar a logística</button>
+                            <h6 class="fw-semibold">En logistica:</h6><button class="btn secondary-btn" type="button">Agregar a logística</button>
                         </div>
                         <div class="table-responsive">
-                            <table class="table">
+                            <table class="table table-striped table-hover ">
                                 <thead>
                                     <tr>
                                         <th>Cantidad</th>
@@ -472,10 +474,10 @@
             </div>
             <div class="tarjeta">
                 <div class="card-title-group">
-                    <h4>Revisar precios:&nbsp;<span id="countRevision">n</span></h4><button class="btn fw-bold" id="btnGenerarOC" type="button">Generar OC</button>
+                    <h4>Revisar precios:&nbsp;<span id="countRevision">n</span></h4><button class="btn secondary-btn" id="btnGenerarOC" type="button">Generar OC</button>
                 </div>
                 <div class="table-responsive" id="tblRevisarPrecios">
-                    <table class="table">
+                    <table class="table table-striped table-hover ">
                         <thead>
                             <tr>
                                 <th>Detalles de producto solicitado</th>
