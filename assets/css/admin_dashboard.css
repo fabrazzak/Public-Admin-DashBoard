@@ -72,7 +72,15 @@
 .table th {
   vertical-align: middle;
   background-color: #e6e6e6;
-  padding: 0 .5rem;
+  padding: 0rem  .5rem;
+}
+.table td {
+  vertical-align: middle;
+  background-color: #e6e6e6;
+  padding: 0rem  3.5rem;
+}
+tr,td ,th{
+border: 1px solid #aaa;
 
 }
 
@@ -553,4 +561,14 @@ tbody tr.active {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+/* mobile device css code  */
+@media (max-width: 768px) {
+
+.table td {
+  vertical-align: middle;
+  background-color: #e6e6e6;
+  padding: 0rem .5rem;
+}
+
 }
