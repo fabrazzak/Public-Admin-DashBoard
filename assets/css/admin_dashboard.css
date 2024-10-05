@@ -76,7 +76,6 @@
 }
 .table td {
   vertical-align: middle;
-  background-color: #e6e6e6;
   padding: 0rem  3.5rem;
 }
 tr,td ,th{
@@ -566,8 +565,7 @@ tbody tr.active {
 @media (max-width: 768px) {
 
 .table td {
-  vertical-align: middle;
-  background-color: #e6e6e6;
+
   padding: 0rem .5rem;
 }
 
