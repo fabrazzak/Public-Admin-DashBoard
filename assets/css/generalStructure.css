@@ -612,4 +612,13 @@ select:disabled {
     gap: 1rem;
   }
 
+  .table-group{
+    flex-direction: column;
+  }
+    .info-row {
+
+      gap: 1.5rem 1rem;
+      flex-wrap: wrap;
+    }
+
 }
