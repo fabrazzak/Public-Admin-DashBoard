@@ -268,7 +268,7 @@ input {
 
 
 .search-input {
-  flex-grow: 1 ;
+  flex-grow: 1;
   background: none;
   width: 100%;
 }
@@ -321,7 +321,7 @@ input {
 }
 
 .placeholder:focus {
-  color: #3A3A3C; 
+  color: #3A3A3C;
   cursor: text;
 
 }
@@ -608,17 +608,23 @@ select:disabled {
 
   .btn-search-group {
     display: flex;
-    flex-direction:column-reverse;    
+    flex-direction: column-reverse;
     gap: 1rem;
   }
 
-  .table-group{
+  .table-group {
     flex-direction: column;
   }
-    .info-row {
 
-      gap: 1.5rem 1rem;
-      flex-wrap: wrap;
-    }
+  .info-row {
+
+    gap: 1.5rem 1rem;
+    flex-wrap: wrap;
+  }
+
+  .info-even-row.info-even-row-mob {
+    flex-direction: column;
+    gap: 15px;
+  }
 
 }
