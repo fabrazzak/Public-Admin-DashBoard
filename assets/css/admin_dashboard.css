@@ -72,11 +72,12 @@
 .table th {
   vertical-align: middle;
   background-color: #e6e6e6;
-  padding: 0rem  .5rem;
+  padding: .5rem;
 }
 .table td {
   vertical-align: middle;
-  padding: 0rem  3.5rem;
+  padding: .5rem;
+
 }
 tr,td ,th{
 border: 1px solid #aaa;
