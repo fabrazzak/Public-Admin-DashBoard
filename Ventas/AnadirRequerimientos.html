@@ -698,32 +698,41 @@
     <script>
 
 
+
+
         const items = document.querySelectorAll(".accordion-header");
-        items.forEach(item => item.addEventListener("click", function () {
-            const itemToggle = this.getAttribute("aria-expanded")
-            const accordianDiv = this.nextElementSibling;
-
-            console.log(itemToggle)
-            console.log(accordianDiv)
-            for (let i = 0; i < items.length; i++) {
-
+        function resetAccordion (){
+              items.forEach(newI => {
+                const sibling = newI.nextElementSibling;
+                const getExpanded = newI.getAttribute("aria-expanded")               
+                    newI.setAttribute("aria-expanded", "false");
+                    sibling.classList.remove("accordionAni")
                
+            })
 
+        }      
+         
+        items.forEach(item => item.addEventListener("click", function () {
+            
+            const itemToggle = this.getAttribute("aria-expanded")
+            const accordianDiv = this.nextElementSibling;  
+            for (let i = 0; i < items.length; i++) { 
                 if (itemToggle == "false") {
+                      resetAccordion();  
+                    
                     this.setAttribute("aria-expanded", "true");
-                    accordianDiv.style.display = 'block'
-                    accordianDiv.classList.add("you")
+                    accordianDiv.classList.add("accordionAni") ;                                    
 
                 } else {
                     items[i].setAttribute("aria-expanded", "false");
-
-                    accordianDiv.style.display = 'none'
+                    accordianDiv.classList.remove("accordionAni")   
+                    resetAccordion();              
 
                 }
 
             }
         }))
-        console.log(items)
+     
 
     </script>
 

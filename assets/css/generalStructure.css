@@ -473,23 +473,16 @@ select:disabled {
 .btn-info-req button {
   width: 100%;
 }
-
-
 .love{
-
-    display: none;
-    transition: all 4000ms linear
-    
-}
-/* .accordion-item button[aria-expanded="false"]+.accordion-header {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: opacity 200ms linear, max-height 200ms linear;
-} */
-
-
-
+}
+.accordionAni{
+  opacity: 1;
+  transition: opacity 300ms linear, max-height 300ms linear ;
+  max-height: 100%;
+}
 
 /* mobile device css code  */
 @media (max-width: 768px) {
