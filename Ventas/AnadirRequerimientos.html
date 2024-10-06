@@ -231,8 +231,8 @@
                     <h6 class="fw-semibold">Adjunto:</h6>
                     <div><input type="file" id="adjunto" class="form-control"></div>
                 </div>
-                <div class="info-detail">
-                    <h6 class="fw-semibold">Estado:</h6>
+                <div class="d-flex gap-2 justify-content-between flex-column flex-md-row ">
+                    <h6 class="fw-semibold ">Estado:</h6>
                     <select id="estado" class="form-control-sm">
                         <option value="1. Registrado" selected="">1. Registrado</option>
                         <option value="2. Con Planilla">2. Con Planilla</option>
@@ -252,8 +252,8 @@
                     <h6 class="fw-semibold">Fecha de rgistro:</h6>
                     <p id="fecha-registro">x</p>
                 </div>
-                <div class="info-detail max-height">
-                    <h6 class="fw-semibold">Nombre del requerimiento:</h6><input type="text" id="nombre-req" class="info-input form-control-sm " placeholder="Type Here">
+                <div class="max-height d-flex justify-content-between gap-3 flex-column flex-md-row ">
+                    <h6 class="fw-semibold">Nombre del requerimiento:</h6><input type="text" id="nombre-req" class="info-input form-control-sm placeholder-text " placeholder="Type Here">
                 </div>
                 <div class="accordion" role="tablist" id="accordion-lugar">
                     <div class="accordion-item">
@@ -585,6 +585,7 @@
             </svg></button>
     </div>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    
 </body>
 
 </html>
