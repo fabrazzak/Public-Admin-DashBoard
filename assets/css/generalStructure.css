@@ -24,7 +24,7 @@
   width: calc(100% - 5rem);
 }
 
-#page-wrapper>* {
+#page-wrapper > * {
   display: flex;
 }
 
@@ -34,7 +34,7 @@ body {
   height: 100vh;
 }
 
-body>* {
+body > * {
   position: absolute;
 }
 
@@ -50,7 +50,7 @@ body>* {
   flex-direction: column;
 }
 
-#content>* {
+#content > * {
   display: flex;
   flex-grow: 1;
 }
@@ -109,9 +109,6 @@ p {
   background-color: #ffffff;
   padding: 1.5rem 2rem;
   border-radius: 12px;
-
-
-
 }
 
 .card-title-group {
@@ -177,7 +174,7 @@ p {
   /* background-color: var(--bs-form-invalid-color); */
 }
 
-.deck-title:hover+.comment {
+.deck-title:hover + .comment {
   display: block;
 }
 
@@ -206,7 +203,6 @@ a {
   flex-direction: row;
   width: fit-content;
   gap: 1rem;
-
 }
 
 .btn-group-update {
@@ -233,7 +229,6 @@ a {
   background: rgb(206, 212, 240);
   border: 1px solid rgb(5, 33, 111);
   background: rgb(206, 212, 240);
-
 }
 
 .btn.active {
@@ -259,13 +254,12 @@ a {
 }
 
 .input-div.search {
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 0 0;
 }
 
 input {
   border: none;
 }
-
 
 .search-input {
   flex-grow: 1;
@@ -291,11 +285,11 @@ input {
   justify-content: space-between;
 }
 
-.tarjeta.row-direction>* {
+.tarjeta.row-direction > * {
   flex: 1;
 }
 
-.tarjeta.filtro-busqueda>* {
+.tarjeta.filtro-busqueda > * {
   flex-grow: 1;
 }
 
@@ -310,20 +304,20 @@ input {
   justify-content: space-between;
 }
 
-
-
-.placeholder {
-  color: #9C9D9F;
+.placeholder-text {
+  color: #9c9d9f;
   font-family: Mulish;
   font-size: 16px;
   cursor: pointer;
   padding: 0px 24px 0px 24px;
 }
 
-.placeholder:focus {
-  color: #3A3A3C;
+.placeholder-text:focus {
+  color: #3a3a3c;
   cursor: text;
-
+  border: 2px solid rgb(206, 212, 240);
+  border-radius: 12px;
+  box-shadow: 0px 0px 4px 0px rgb(153, 187, 255);
 }
 
 /* Table */
@@ -418,7 +412,7 @@ select:disabled {
   gap: 2rem;
 }
 
-.info-even-row>* {
+.info-even-row > * {
   flex: 1;
 }
 
@@ -442,7 +436,6 @@ select:disabled {
   background-color: var(--bs-primary);
 }
 
-
 /* conPlanilla css  */
 
 #btnVistaProductos {
@@ -451,14 +444,12 @@ select:disabled {
   border-radius: 12px;
   background: rgb(206, 212, 240);
   font-family: Mulish;
-
 }
 
 #btnVistaProductos:hover {
   background: #041c5e;
   color: white;
 }
-
 
 .info-even-row-update {
   display: grid;
@@ -483,11 +474,8 @@ select:disabled {
   width: 100%;
 }
 
-
-
 /* mobile device css code  */
 @media (max-width: 768px) {
-
   #top-menu {
     padding: 10px 18px;
     gap: 10px;
@@ -499,7 +487,6 @@ select:disabled {
     display: flex;
     flex-direction: column;
   }
-
 
   .btn-group {
     display: flex;
@@ -514,13 +501,11 @@ select:disabled {
 
   #content {
     padding: 1rem 1rem;
-
   }
 
   .btn-group-update {
     display: flex;
     flex-direction: column;
-
   }
 
   .tarjeta {
@@ -533,13 +518,11 @@ select:disabled {
 
   .info-even-row {
     flex-direction: column;
-
   }
 
   .card-title-group {
     flex-direction: column;
     gap: 15px;
-
   }
 
   .admin-tarjetas-grupo {
@@ -553,7 +536,7 @@ select:disabled {
     gap: 15px;
   }
 
-  .comment-title>p {
+  .comment-title > p {
     text-align: left;
   }
 
@@ -569,7 +552,6 @@ select:disabled {
   .info-even-row {
     display: flex;
     flex-direction: row;
-
   }
 
   .deck-info {
@@ -597,7 +579,6 @@ select:disabled {
 
   #inforReq.info-even-row {
     flex-direction: column;
-
   }
 
   .inforReq-wraper {
@@ -617,7 +598,6 @@ select:disabled {
   }
 
   .info-row {
-
     gap: 1.5rem 1rem;
     flex-wrap: wrap;
   }
@@ -626,5 +606,4 @@ select:disabled {
     flex-direction: column;
     gap: 15px;
   }
-
 }
