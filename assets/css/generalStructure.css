@@ -474,6 +474,23 @@ select:disabled {
   width: 100%;
 }
 
+
+.love{
+
+    display: none;
+    transition: all 4000ms linear
+    
+}
+/* .accordion-item button[aria-expanded="false"]+.accordion-header {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+} */
+
+
+
+
 /* mobile device css code  */
 @media (max-width: 768px) {
   #top-menu {
