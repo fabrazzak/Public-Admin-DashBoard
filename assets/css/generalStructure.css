@@ -585,7 +585,17 @@ select:disabled {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+   flex-wrap: wrap;
   }
+
+  
+.btn-info-req {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  gap: 15px;
+  flex-wrap:wrap ;
+}
 
   .btn-search-group {
     display: flex;
