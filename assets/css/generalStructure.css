@@ -479,6 +479,20 @@ select:disabled {
   max-height: 100%;
 }
 
+.accordion {   
+    --bs-accordion-color: #ffffff00;;
+    --bs-accordion-bg: #ffffff00;   
+}
+.accordion-header:hover{     
+    --bs-accordion-color: var(--bs-body-color);
+    --bs-accordion-bg: var(--bs-body-bg);
+    background:var(--bs-body-bg);;
+}
+
+.accordion-header[aria-expanded=true] .accordion-button::after {
+        transform: rotate(180deg);
+    }
+
 /* medium device css code  */
 @media (max-width: 1040px) {
   #top-menu {
