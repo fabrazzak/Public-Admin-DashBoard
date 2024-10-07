@@ -563,7 +563,7 @@ tbody tr.active {
   align-items: center;
 }
 /* mobile device css code  */
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
 
 .table td {
 

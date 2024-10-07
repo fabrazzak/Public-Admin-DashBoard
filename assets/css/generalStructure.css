@@ -485,7 +485,7 @@ select:disabled {
 }
 
 /* mobile device css code  */
-@media (max-width: 768px) {
+@media (max-width: 1040px) {
   #top-menu {
     padding: 10px 18px;
     gap: 10px;
@@ -503,6 +503,7 @@ select:disabled {
     flex-direction: column;
     width: 100%;
     gap: 15px;
+    max-width: 300px;
   }
 
   .btn-group a {
@@ -616,4 +617,8 @@ select:disabled {
     flex-direction: column;
     gap: 15px;
   }
+  svg.icon.icon-tabler {
+    width: 30px;
+    height: 30px;
+}
 }
