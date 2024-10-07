@@ -121,12 +121,12 @@
     <div id="page-wraper">
         <div id="top-menu" class="buttons">
             <h3 id="page-title">Ventas: Análisis de ofertas</h3>
-            <div class="corner-group"><a class="btn secondary-btn" role="button" id="btnACompras">Enviar a compras</a><a class="btn secondary-btn" role="button" id="btnCotizaciones" href="Ventas/Cotizaciones.html">Cotizaciones: n</a></div>
+            <div class="btn-group"><a class="btn secondary-btn" role="button" id="btnACompras">Enviar a compras</a><a class="btn secondary-btn" role="button" id="btnCotizaciones" href="Ventas/Cotizaciones.html">Cotizaciones: n</a></div>
         </div>
         <div id="content" class="content-column">
             <div class="tarjeta">
                 <h4 id="infoReqCot">Info R2024-871</h4>
-                <div class=" d-flex gap-3 flex-column  flex-lg-row">
+                <div id="info-css-modify" class=" info-even-row flex-wrap  ">
                     <div class="d-flex flex-column  gap-2 ">
                 
                         <div class="info-detail">
@@ -194,9 +194,9 @@
             </div>
             
             <div class="tarjeta">
-                <div class="card-title-group">
+                <div class="card-title-group ">
                     <h4>Productos planilla:&nbsp;<span id="countPlanilla">n</span></h4>
-                    <div class="corner-group"><button class="btn secondary-btn" id="Nuevo-producto-planilla" type="button" data-bs-target="#modal-nuevo-producto-planilla" data-bs-toggle="modal">+ Producto</button></div>
+                    <div class="btn-group"><button class="btn secondary-btn" id="Nuevo-producto-planilla" type="button" data-bs-target="#modal-nuevo-producto-planilla" data-bs-toggle="modal">+ Producto</button></div>
                 </div>
                 <div class="table-responsive" id="tblProductosSolicitados">
                     <table class="table">
@@ -222,7 +222,7 @@
             <div class="tarjeta">
                 <div class="card-title-group">
                     <h4>Comparar precio:&nbsp;<span id="countComparacion">n</span></h4>
-                    <div class="corner-group"><input type="text" id="input-gm" class="info-input placeholder-text form-control-sm" placeholder="Type Here"><button class="btn secondary-btn" id="btn-gm" type="button">Establecer GM %</button></div>
+                    <div class="btn-group"><input type="text" id="input-gm" class="info-input placeholder-text form-control-sm" placeholder="Type Here"><button class="btn secondary-btn" id="btn-gm" type="button">Establecer GM %</button></div>
                 </div>
                 <div class="table-responsive" id="tblProductosOfrecidos">
                     <table class="table">
@@ -293,7 +293,7 @@
                 <div class="card-title-group">
                     <h4>Detalle de producto</h4>
                     <div class="corner-group"><button class="btn fw-bold secondary-btn" id="btnCancelar" type="button">Cancelar</button></div>
-                    <div class="corner-group"><button class="btn fw-bold secondary-btn" id="btnCancelarProducto" type="button">Cancelar</button><button class="fw-bold  btn btn-primary" id="btnGuardarProducto" type="button">Guardar</button><button class="btn b fw-bold secondary-btn" id="btnEditarProducto" type="button">Editar</button></div>
+                    <div class="btn-group"><button class="btn fw-bold secondary-btn" id="btnCancelarProducto" type="button">Cancelar</button><button class="fw-bold  btn btn-primary" id="btnGuardarProducto" type="button">Guardar</button><button class="btn b fw-bold secondary-btn" id="btnEditarProducto" type="button">Editar</button></div>
                 </div>
                 <div class="info-even-row info-even-row-mob">
                     <div class="info-column">
@@ -518,9 +518,9 @@
                 </div>
             </div>
             <div class="tarjeta">
-                <div class="card-title-group">
+                <div class="card-title-group ">
                     <h4>PDF vista previa</h4>
-                    <div class="corner-group"><button class="btn fw-bold secondary-btn" id="btnGrupo" type="button">Añadir componentes de grupo</button><button class="btn secondary-btn fw-bold" id="btnRgnVP" type="button">Regenerar vista previa</button><button class="btn btn-primary fw-bold" id="btnGenerarCot" type="button">Generar cotización</button></div>
+                    <div class=" btn-group"><button class="btn fw-bold secondary-btn" id="btnGrupo" type="button">Añadir componentes de grupo</button><button class="btn secondary-btn fw-bold" id="btnRgnVP" type="button">Regenerar vista previa</button><button class="btn btn-primary fw-bold" id="btnGenerarCot" type="button">Generar cotización</button></div>
                 </div>
                 <div class="ratio ratio-16x9"><iframe id="pdf" src="https://thesourdoughjourney.com/wp-content/uploads/2021/04/Bulk-O-Matic-V1-04_25_21.pdf"></iframe></div>
             </div>
