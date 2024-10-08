@@ -492,7 +492,6 @@ select:disabled {
 }
 
 
-
 #terjeta-one{
   width: 49%;
 }
@@ -562,9 +561,6 @@ select:disabled {
 background-color: #9abcea !important;  
 }
 
-/* .tabulator-cell.tabulator-editable{
-   
-}  */
 
 /* medium device css code  */
 @media (max-width: 1040px) {
@@ -735,6 +731,5 @@ background-color: #9abcea !important;
   #tarjeta-detalle .info-detail {
     flex-wrap: wrap;
   }
-
 
 }
