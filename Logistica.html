@@ -44,6 +44,7 @@
     <script src="assets/js/tablas.js"></script>
 
     <script src="assets/js/logistica_dashboard.js"></script>
+        <script src="assets/js/humburger_menu.js"></script>
 </head>
 
 <body>
@@ -115,7 +116,15 @@
     </div>
     <div id="page-wraper">
         <div id="top-menu" class="buttons">
-            <h3 id="page-title">Logística: Dashboard</h3><a class="btn fw-bold secondary-btn" role="button" id="btnMovimientos">Todos los movimientos</a>
+            
+            <h3 id="page-title" >            
+            Logística: Dashboard
+                <button onclick="menuHandle()" id="humberger-menu" aria-expanded="false" class="btn p-2 border  mb-2 ">
+                    <img id="humburder-img1" class="" width="30px" src="assets/img/humberger-menu.png" alt="">
+                    <img id="humburder-img2" class="d-none" width="30px" src="assets/img/close-clean.svg" alt="">
+                </button>
+            </h3>
+            <a class="btn fw-bold secondary-btn" role="button" id="btnMovimientos">Todos los movimientos</a>
         </div>
         <div id="content" class="content-mob">
             <div class="tarjeta">

@@ -16,7 +16,9 @@
   position: sticky;
   top: 0;
 }
-
+#humberger-menu {
+  display: none;
+}
 #page-wraper {
   display: flex;
   flex-direction: column;
@@ -110,7 +112,20 @@ p {
   padding: 1.5rem 2rem;
   border-radius: 12px;
 }
+.tarjeta-container {
+  padding: 30px 30px 0px 30px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 12px;
+}
 
+.tarjeta-inicio {
+  background-color: #ffffff;
+  padding: 0 0.5rem;
+  flex-wrap: wrap;
+  overflow-x: auto;
+}
 .card-title-group {
   display: flex;
   height: fit-content;
@@ -299,7 +314,6 @@ input {
 
 .placeholder-text {
   color: #9c9d9f;
-  font-family: Mulish;
   font-size: 16px;
   cursor: pointer;
   padding: 0px 24px 0px 24px;
@@ -491,8 +505,7 @@ select:disabled {
   transform: rotate(180deg);
 }
 
-
-#terjeta-one{
+#terjeta-one {
   width: 49%;
 }
 
@@ -527,7 +540,6 @@ select:disabled {
 }
 .tabulator .tabulator-tableholder {
   background: rgba(206, 212, 240, 0.499) !important;
-
 }
 .tabulator .tabulator-header {
   background: rgb(206, 212, 240) !important;
@@ -549,18 +561,17 @@ select:disabled {
 
 .tabulator-row.tabulator-group {
   background-color: white !important;
-  border: 1px solid rgb(230, 232, 235) !important;  
+  border: 1px solid rgb(230, 232, 235) !important;
 }
 .tabulator-row.tabulator-group:hover {
-   background: rgb(5, 33, 111) !important;
-  border: 1px solid rgb(230, 232, 235) !important; 
-  color: white !important; 
+  background: rgb(5, 33, 111) !important;
+  border: 1px solid rgb(230, 232, 235) !important;
+  color: white !important;
 }
 
- .tabulator-row.tabulator-selected  {
-background-color: #9abcea !important;  
+.tabulator-row.tabulator-selected {
+  background-color: #9abcea !important;
 }
-
 
 /* medium device css code  */
 @media (max-width: 1040px) {
@@ -599,9 +610,9 @@ background-color: #9abcea !important;
   .tarjeta {
     padding: 1rem 1rem;
   }
-#terjeta-one{
-  width: 100%;
-}
+  #terjeta-one {
+    width: 100%;
+  }
   .tarjeta.row-direction {
     flex-direction: column;
   }
@@ -704,6 +715,14 @@ background-color: #9abcea !important;
     width: 30px;
     height: 30px;
   }
+
+  .tarjeta-container {
+    flex-wrap: wrap;
+  }
+  .tarjeta-inicio {
+    margin: auto;
+    width: 100%;
+  }
 }
 
 /* mobile device  */
@@ -712,6 +731,30 @@ background-color: #9abcea !important;
   #top-menu {
     flex-direction: column;
   }
+  #page-wraper {
+    left: 0rem;
+    width: calc(100%);
+  }
+  #top-menu {  
+    z-index: 5;
+      }
+  #page-title {
+    display: flex;
+    justify-content: space-between !important ;
+    width: 100%;
+  }
+  .fixed-top-margin{
+    margin-top: 200px; 
+  }
+ 
+
+  #nav-group {
+    display: none;
+  }
+  #humberger-menu {
+    display: block;
+  }
+
   .btn-group {
     flex-wrap: wrap;
     max-width: 100%;
@@ -731,5 +774,9 @@ background-color: #9abcea !important;
   #tarjeta-detalle .info-detail {
     flex-wrap: wrap;
   }
-
+  .tarjeta-container {
+    flex-wrap: wrap;
+    padding: 15px 15px 0px 15px;
+    border-radius: 12px;
+  }
 }

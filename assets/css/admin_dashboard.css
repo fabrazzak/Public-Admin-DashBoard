@@ -571,9 +571,3 @@ tbody tr.active {
   justify-content: space-between;
   align-items: center;
 }
-/* mobile device css code  */
-@media (max-width: 1080px) {
-  .table td {
-    padding: 0rem 0.5rem;
-  }
-}
