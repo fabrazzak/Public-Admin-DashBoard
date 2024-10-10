@@ -572,6 +572,9 @@ select:disabled {
 .tabulator-row.tabulator-selected {
   background-color: #9abcea !important;
 }
+.fixed-top-margin{
+    margin-top: 80px; 
+  }
 
 /* medium device css code  */
 @media (max-width: 1040px) {
@@ -779,4 +782,13 @@ select:disabled {
     padding: 15px 15px 0px 15px;
     border-radius: 12px;
   }
+  .ratio {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+.tabulator {
+   
+    height: 50vh !important;
+}
 }

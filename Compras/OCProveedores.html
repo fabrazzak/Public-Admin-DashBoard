@@ -41,6 +41,7 @@
 
     <!--Global functions -->
     <script src="../assets/js/tablas.js"></script><script src="../assets/js/compras_OCProveedores.js"></script>
+    <script src="../assets/js/humburger_menu.js"></script>
 </head>
 
 <body>
@@ -112,7 +113,14 @@
     </div>
     <div id="page-wraper">
         <div id="top-menu" class="buttons">
-            <h3 id="page-title">Compras: OC proveedores</h3>
+            
+            <h3 id="page-title">
+                Compras: OC proveedores
+                <button onclick="menuHandle()" id="humberger-menu" aria-expanded="false" class="btn p-2 border  mb-2 ">
+                    <img id="humburder-img1" class="" width="30px" src="../assets/img/humberger-menu.png" alt="">
+                    <img id="humburder-img2" class="d-none" width="30px" src="../assets/img/close-clean.svg" alt="">
+                </button>
+            </h3>
         </div>
         <div id="content" class="content-column">
             <div class="tarjeta row-direction">

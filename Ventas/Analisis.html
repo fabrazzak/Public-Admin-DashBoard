@@ -43,12 +43,14 @@
     <!--Global functions -->
     <script src="../assets/js/tablas.js"></script><!--Individual JS-->    
     <script src="../assets/js/ventas_analisis.js"></script>
+    <script src="../assets/js/humburger_menu.js"></script>
 
 
     <!-- Generear PDF-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 </head>
 
 <body>
@@ -120,7 +122,15 @@
     </div>
     <div id="page-wraper">
         <div id="top-menu" class="buttons">
-            <h3 id="page-title">Ventas: Análisis de ofertas</h3>
+           
+            <h3 id="page-title">
+            
+            Ventas: Análisis de ofertas
+                <button onclick="menuHandle()" id="humberger-menu" aria-expanded="false" class="btn p-2 border  mb-2 ">
+                    <img id="humburder-img1" class="" width="30px" src="../assets/img/humberger-menu.png" alt="">
+                    <img id="humburder-img2" class="d-none" width="30px" src="../assets/img/close-clean.svg" alt="">
+                </button>
+            </h3>
             <div class="btn-group"><a class="btn secondary-btn" role="button" id="btnACompras">Enviar a compras</a><a class="btn secondary-btn" role="button" id="btnCotizaciones" href="Ventas/Cotizaciones.html">Cotizaciones: n</a></div>
         </div>
         <div id="content" class="content-column">

@@ -41,6 +41,7 @@
 
     <!--Global functions -->
     <script src="../assets/js/tablas.js"></script><script src="../assets/js/admin_documentos.js"></script>
+    <script src="../assets/js/humburger_menu.js"></script>
 </head>
 
 <body>
@@ -112,7 +113,18 @@
     </div>
     <div id="page-wraper">
         <div id="top-menu" class="buttons">
-            <h3 id="page-title">Administración: Documentos</h3><a class="btn secondary-btn" role="button" href="https://api-seguridad.sunat.gob.pe/v1/clientessol/4f3b88b3-d9d6-402a-b85d-6a0bc857746a/oauth2/loginMenuSol" target="_blank">SUNAT</a>
+            
+            <h3 id="page-title">
+                Administración: Documentos
+                <button onclick="menuHandle()" id="humberger-menu" aria-expanded="false" class="btn p-2 border  mb-2 ">
+                    <img id="humburder-img1" class="" width="30px" src="../assets/img/humberger-menu.png" alt="">
+                    <img id="humburder-img2" class="d-none" width="30px" src="../assets/img/close-clean.svg" alt="">
+                </button>
+            </h3>
+            
+           <div class="btn-group"><a class="btn secondary-btn" role="button"
+            href="https://api-seguridad.sunat.gob.pe/v1/clientessol/4f3b88b3-d9d6-402a-b85d-6a0bc857746a/oauth2/loginMenuSol"
+            target="_blank">SUNAT</a></div>
         </div>
         <div id="content" class="content-column">
             <div class="tarjeta row-direction">
