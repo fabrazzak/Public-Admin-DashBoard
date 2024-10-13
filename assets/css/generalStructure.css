@@ -572,8 +572,11 @@ select:disabled {
 .tabulator-row.tabulator-selected {
   background-color: #9abcea !important;
 }
-.fixed-top-margin{
-    margin-top: 80px; 
+
+  .info-r2-container{
+    display: flex;
+    gap: 25px;
+
   }
 
 /* medium device css code  */
@@ -726,6 +729,23 @@ select:disabled {
     margin: auto;
     width: 100%;
   }
+   .info-r2-container{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+
+  }
+  .page-wraper{
+    position: relative; 
+  }
+  #top-menu.top-menu-sticky{
+    position: fixed !important;
+    top: 0; 
+    padding-right: 95px !important; 
+  }
+  .fixed-top-margin{
+    margin-top: 120px ; 
+  }
 }
 
 /* mobile device  */
@@ -791,4 +811,9 @@ select:disabled {
    
     height: 50vh !important;
 }
+ #top-menu.top-menu-sticky{
+    position: fixed !important;
+    top: 0;
+    padding-right: 20px !important; 
+  }
 }
