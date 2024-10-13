@@ -590,6 +590,13 @@ select:disabled {
 
   }
 
+ .tabulator >:not(caption)>*>* {
+    padding: 0;
+    background-color: white !important ;
+ 
+}
+
+
 /* medium device css code  */
 @media (max-width: 1040px) {
   #top-menu {
