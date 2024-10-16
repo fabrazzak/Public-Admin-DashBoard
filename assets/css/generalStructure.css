@@ -797,7 +797,6 @@ select:disabled {
     margin-top: 200px; 
   }
  
-
   #nav-group {
     display: none;
   }
@@ -834,15 +833,14 @@ select:disabled {
     width: 100%;
     height: 50vh;
 }
-.tabulator {
-   
+.tabulator {   
     height: 50vh !important;
 }
  #top-menu.top-menu-sticky{
     position: fixed !important;
     top: 0;
-    padding-right: 20px !important; 
+    padding-right: 20px  !important; 
   }
-  
+     
 
 }

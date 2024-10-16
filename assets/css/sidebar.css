@@ -117,7 +117,6 @@
   z-index: 999999999999999999999999999 !important;
   height: auto;
 }
- 
 
   #sidebar[aria-expanded="false"] {
   background-color: var(--bs-primary);
@@ -157,7 +156,6 @@
 .nav-link:hover {
   background-color: #ffffff;
 }
-
 .nav-link:hover > * {
   color: var(--bs-primary);
 }
