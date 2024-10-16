@@ -843,48 +843,6 @@ select:disabled {
     top: 0;
     padding-right: 20px !important; 
   }
-
-  #sidebar[aria-expanded="false"] {
-  background-color: var(--bs-primary);
-  padding: 1.5rem;
-  width: fit-content;
-  transition: 300ms ease-in;
-}
-
-#sidebar[aria-expanded="false"] .nav-link {
-  color: #f6f7fb;
-  width: 100%;
-}
-
-#sidebar[aria-expanded="false"] .menu-text {
-  display: block;
-}
-
-#sidebar[aria-expanded="false"] #logo-collapsed {
-  display: none;
-}
-
-#sidebar[aria-expanded="false"] #logo-expanded {
-  display: block;
-}
-
-#sidebar[aria-expanded="false"] ~ #overlay {
-  display: block;
-  background-color: #f6f7fb7e;
-}
-
-.nav-link:hover {
-  background-color: #ffffff;
-}
-
-.nav-link:hover > * {
-  color: var(--bs-primary);
-}
-
-#overlay {
-  position: relative; 
-}
-
-
+  
 
 }
