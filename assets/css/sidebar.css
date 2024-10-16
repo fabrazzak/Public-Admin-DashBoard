@@ -115,7 +115,6 @@
 #nav-group{
   position: relative !important;
   z-index: 999999999999999999999999999 !important;
-  overflow-y: scroll; 
   height: auto;
 }
 
@@ -124,10 +123,8 @@
   background-color: var(--bs-primary);
   padding: 1.5rem;
   width: fit-content;
-  transition: 300ms ease-in;  
-  overflow-y: scroll;
+  transition: 300ms ease-in;    
   height: auto;
-
 }
 
 #sidebar[aria-expanded="false"] .nav-link {
